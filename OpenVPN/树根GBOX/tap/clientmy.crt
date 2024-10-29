@@ -1,0 +1,72 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 2 (0x2)
+        Signature Algorithm: sha1WithRSAEncryption
+        Issuer: C=CN, ST=GD, L=Guangzhou, O=rtc, OU=tellme, CN=tellme/name=tellme/emailAddress=666@qq.com
+        Validity
+            Not Before: May  7 08:55:36 2022 GMT
+            Not After : May  4 08:55:36 2032 GMT
+        Subject: C=CN, ST=GD, L=Guangzhou, O=rtc, OU=tellme, CN=clientmy/name=tellme/emailAddress=666@qq.com
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                RSA Public-Key: (1024 bit)
+                Modulus:
+                    00:cd:ac:a4:3c:65:1b:ca:7b:bd:bf:08:16:a8:f3:
+                    d5:f0:59:17:b8:2b:75:bb:b4:61:83:6d:19:a5:82:
+                    6c:2b:c3:e3:68:6d:b1:86:b0:12:02:78:aa:9e:de:
+                    12:1b:6e:fb:a9:a3:fa:0c:8e:a3:3d:6c:04:a9:83:
+                    d9:86:67:fb:8b:38:30:f7:a5:88:56:e9:7a:71:af:
+                    96:19:58:48:27:fe:9d:bc:90:65:04:56:6b:b7:d1:
+                    3c:4c:80:70:8f:ca:7f:22:36:59:a8:f2:6b:da:d0:
+                    ca:77:bb:83:89:29:c9:62:85:29:5d:1d:cf:63:31:
+                    a9:ad:b7:07:c3:7c:34:12:93
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Basic Constraints: 
+                CA:FALSE
+            Netscape Comment: 
+                Easy-RSA Generated Certificate
+            X509v3 Subject Key Identifier: 
+                54:41:F2:B0:2E:BB:10:D8:13:D3:CC:D5:8D:5A:1A:A0:5F:B2:84:3F
+            X509v3 Authority Key Identifier: 
+                keyid:15:39:15:3D:41:63:5C:DE:11:97:BB:CC:02:ED:7C:F2:46:33:2F:29
+                DirName:/C=CN/ST=GD/L=Guangzhou/O=rtc/OU=tellme/CN=tellme/name=tellme/emailAddress=666@qq.com
+                serial:64:29:9D:AF:55:DB:91:7D:1D:DB:D8:5B:89:B8:D5:6A:CA:96:F4:F7
+
+            X509v3 Extended Key Usage: 
+                TLS Web Client Authentication
+            X509v3 Key Usage: 
+                Digital Signature
+    Signature Algorithm: sha1WithRSAEncryption
+         b5:2d:44:7a:4e:2a:ab:c8:aa:61:82:0a:7c:5e:35:09:cd:34:
+         89:f9:b6:7d:8c:a7:65:73:eb:de:d4:5d:3f:19:21:b4:6b:ca:
+         66:f7:6e:d8:57:61:08:35:c7:f3:d0:5b:16:64:03:19:97:c7:
+         16:54:71:44:f5:16:9f:d7:6a:63:b8:dc:8a:76:15:01:ea:be:
+         d5:be:ea:64:79:81:30:a1:74:56:1d:37:38:c1:8d:a9:6a:e0:
+         48:c3:c5:74:74:a3:82:8a:47:4d:2a:bd:55:b3:47:c2:8c:e6:
+         b1:f0:b8:bd:8a:72:16:5e:46:56:9c:ac:30:61:c2:c8:8d:76:
+         b0:dc
+-----BEGIN CERTIFICATE-----
+MIID3DCCA0WgAwIBAgIBAjANBgkqhkiG9w0BAQUFADCBijELMAkGA1UEBhMCQ04x
+CzAJBgNVBAgTAkdEMRIwEAYDVQQHEwlHdWFuZ3pob3UxDDAKBgNVBAoTA3J0YzEP
+MA0GA1UECxMGdGVsbG1lMQ8wDQYDVQQDEwZ0ZWxsbWUxDzANBgNVBCkTBnRlbGxt
+ZTEZMBcGCSqGSIb3DQEJARYKNjY2QHFxLmNvbTAeFw0yMjA1MDcwODU1MzZaFw0z
+MjA1MDQwODU1MzZaMIGMMQswCQYDVQQGEwJDTjELMAkGA1UECBMCR0QxEjAQBgNV
+BAcTCUd1YW5nemhvdTEMMAoGA1UEChMDcnRjMQ8wDQYDVQQLEwZ0ZWxsbWUxETAP
+BgNVBAMTCGNsaWVudG15MQ8wDQYDVQQpEwZ0ZWxsbWUxGTAXBgkqhkiG9w0BCQEW
+CjY2NkBxcS5jb20wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAM2spDxlG8p7
+vb8IFqjz1fBZF7grdbu0YYNtGaWCbCvD42htsYawEgJ4qp7eEhtu+6mj+gyOoz1s
+BKmD2YZn+4s4MPeliFbpenGvlhlYSCf+nbyQZQRWa7fRPEyAcI/KfyI2Wajya9rQ
+yne7g4kpyWKFKV0dz2Mxqa23B8N8NBKTAgMBAAGjggFMMIIBSDAJBgNVHRMEAjAA
+MC0GCWCGSAGG+EIBDQQgFh5FYXN5LVJTQSBHZW5lcmF0ZWQgQ2VydGlmaWNhdGUw
+HQYDVR0OBBYEFFRB8rAuuxDYE9PM1Y1aGqBfsoQ/MIHKBgNVHSMEgcIwgb+AFBU5
+FT1BY1zeEZe7zALtfPJGMy8poYGQpIGNMIGKMQswCQYDVQQGEwJDTjELMAkGA1UE
+CBMCR0QxEjAQBgNVBAcTCUd1YW5nemhvdTEMMAoGA1UEChMDcnRjMQ8wDQYDVQQL
+EwZ0ZWxsbWUxDzANBgNVBAMTBnRlbGxtZTEPMA0GA1UEKRMGdGVsbG1lMRkwFwYJ
+KoZIhvcNAQkBFgo2NjZAcXEuY29tghRkKZ2vVduRfR3b2FuJuNVqypb09zATBgNV
+HSUEDDAKBggrBgEFBQcDAjALBgNVHQ8EBAMCB4AwDQYJKoZIhvcNAQEFBQADgYEA
+tS1Eek4qq8iqYYIKfF41Cc00ifm2fYynZXPr3tRdPxkhtGvKZvdu2FdhCDXH89Bb
+FmQDGZfHFlRxRPUWn9dqY7jcinYVAeq+1b7qZHmBMKF0Vh03OMGNqWrgSMPFdHSj
+gopHTSq9VbNHwozmsfC4vYpyFl5GVpysMGHCyI12sNw=
+-----END CERTIFICATE-----

@@ -1,0 +1,10 @@
+{
+  "openvpn": {
+    "openvpn": "/usrdata/openvpn",
+    "ca_cert": "/usrdata/ca.crt",
+    "client_key": "/usrdata/clientmy.key",
+    "client_cert": "/usrdata/clientmy.crt", 
+    "config": "/usrdata/tap_box.ovpn"
+  }
+}
+

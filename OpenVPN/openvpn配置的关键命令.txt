@@ -1,0 +1,66 @@
+cd /etc/openvpn
+配置文件和证书文件需要放在此路径下，Linux安装好openvpn以后，将.conf配置文件放到此目录下，则会开机启动，有几个配置文件就启动几个进程。
+openvpn --daemon --config server.conf   //启动openvpn服务
+
+在任何目录下使用下述命令可以启动和停止openvpn的进程
+/etc/init.d/openvpn start
+/etc/init.d/openvpn stop
+/etc/init.d/openvpn restart
+查看是否启动成功
+netstat -lntup | grep openvpn
+ps -aux|grep openvpn
+
+openvpn --cd $dir --daemon --config server.conf
+openvpn --daemon --config server.conf
+
+命令终止
+killall -15 openvpn #退出 SIGUSR1
+killall -2 openvpn  #退出 SIGINT
+killall -12 openvpn #将连接统计信息输出到log文件或syslog SIGUSR2
+killall -1 openvpn  #硬重启  SIGHUP, 重启后pid改变
+killall -10 openvpn #条件重启 SIGUSR1, 重启后pid不会改变
+
+关闭防火墙和设置NAT
+sudo systemctl stop ufw.service
+sudo systemctl disable ufw.service
+//查看防火墙状态
+sudo ufw status
+状态:不活动
+
+[root@xlb_agent ~]# firewall-cmd --state
+[root@xlb_agent ~]# systemctl stop firewalld
+[root@xlb_agent ~]# systemctl disable firewalld
+
+关闭selinux，一般Linux系统都没装
+#这是临时关闭，永久关闭在 /etc/selinux/config
+setenforce 0
+
+将net.ipv4.ip_forward = 1导入到内核里去，使系统永久生效开启路由转发功能
+echo "net.ipv4.ip_forward = 1" >> /etc/sysctl.conf
+sysctl -p 
+临时方案
+echo 1 > /proc/sys/net/ipv4/ip_forward
+设置网卡nat
+iptables -t nat -A POSTROUTING -s 10.8.0.0/24 -j MASQUERADE #IP地址为VPN的虚拟局域网的地址
+在Ubuntu中，可以通过安装iptables-persistent包，并在系统启动时自动从/etc/iptables/rules.v4和/etc/iptables/rules.v6文件中加载规则
+sudo apt-get install iptables-persistent
+netfilter-persistent save
+
+sudo apt-get remove --purge iptables-persistent
+
+
+openvpn 查路由表nat
+iptables 删除 POSTROUTING 一个规则
+iptables -t nat -L POSTROUTING --line-numbers
+iptables -t nat -D POSTROUTING <rule-number>
+iptables -t nat -L
+iptables -L
+route print #Windows
+route -n #Linux
+
+默认文件路径，里面有ipp.txt  openvpn.log  openvpn-status.log
+cat /var/log/openvpn
+
+一般是/usr/share/doc/openvpn-xxx目录下，xxx是版本号。其中我们需要的几个文件就在sample/sample-config-files目录下
+
+ifconfig-push 10.8.0.6 10.8.0.7
